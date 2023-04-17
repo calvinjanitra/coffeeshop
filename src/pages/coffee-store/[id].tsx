@@ -1,11 +1,11 @@
 import React from 'react';
 import { useRouter } from 'next/router';
 
-const coffeestore = () => {
+const Coffeestore = () => {
     const router = useRouter();
     const p = router.query.id;
 
-    return <div>coffeestore {p}</div>;
+    return <div>Coffeestore {p}</div>;
 };
 
-export default coffeestore;
+export default Coffeestore;

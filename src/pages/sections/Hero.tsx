@@ -20,7 +20,7 @@ const Hero = () => {
                     {dataHero.card.map((item, index) => {
                         const { src, head, sub } = item;
                         return (
-                            <div className='flex flex-row items-center gap-x-8'>
+                            <div className='flex flex-row items-center gap-x-8' key={index}>
                                 <Image src={src} alt='tag' width={80} height={80} />
                                 <div className='flex flex-col'>
                                     <h3 className='font-bold text-xl'>{head}</h3>

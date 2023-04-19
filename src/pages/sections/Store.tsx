@@ -27,8 +27,8 @@ export async function getStaticProps() {
     };
 }
 
-const Store = ({ data }: coffeeData) => {
-    console.log('data', data);
+const Store = (props: any) => {
+    console.log('props', props);
     return (
         <section className=''>
             <div className='w-[85%] mx-auto h-fit bg-[#1F212F] rounded-2xl text-white'>
@@ -49,7 +49,7 @@ const Store = ({ data }: coffeeData) => {
                         );
                     })}
                 </div>
-                <div className='p-2'>
+                <div className='px-4'>
                     {coffeeStoreData.length > 0 && (
                         <div>
                             <div className='text-[2.5rem] font-bold'>

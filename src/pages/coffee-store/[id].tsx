@@ -6,7 +6,7 @@ import Head from 'next/head';
 import Image from 'next/image';
 import { IoArrowBackCircleOutline } from 'react-icons/io5';
 import { FiExternalLink } from 'react-icons/fi';
-
+import { AiTwotoneLike } from 'react-icons/ai';
 export function getStaticProps(staticProps: any) {
     const params = staticProps.params;
     return {
@@ -43,6 +43,10 @@ const Coffeestore = (props: any) => {
 
     const { imgUrl, address, neighbourhood, name, description } = props.coffeeStore;
 
+    const handleLikeButton = () => {
+        console.log('like');
+    };
+
     return (
         <div>
             <Head>
@@ -70,10 +74,13 @@ const Coffeestore = (props: any) => {
                             <h3 className='text-2xl font-bold'>Address</h3>
                             <p>{address}</p>
                         </div>
-                        <div>
+                        <div className='flex flex-row gap-x-2'>
                             <button className='py-2 w-[55%] border-2 border-gray-300 hover:bg-[#9c7b5a] transition-all rounded-md flex flex-row items-center gap-x-2 justify-center'>
                                 <h3 className='font-bold'>Go to Store Website</h3>
                                 <FiExternalLink />
+                            </button>
+                            <button className='py-2 w-fit transition-all rounded-md flex flex-row items-center gap-x-2 justify-center text-2xl' onClick={handleLikeButton}>
+                                <AiTwotoneLike />
                             </button>
                         </div>
                     </div>

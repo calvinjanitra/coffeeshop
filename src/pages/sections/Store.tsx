@@ -30,7 +30,7 @@ export async function getStaticProps() {
 const Store = (props: any) => {
     console.log('props', props);
     return (
-        <section className=''>
+        <section className='mb-[6rem]'>
             <div className='w-[85%] mx-auto h-fit bg-[#1F212F] rounded-2xl text-white'>
                 <div className='flex flex-row justify-center gap-x-16 mb-8'>
                     {dataStore.map((item, index) => {
@@ -49,7 +49,7 @@ const Store = (props: any) => {
                         );
                     })}
                 </div>
-                <div className='px-4'>
+                <div className='px-4 py-4'>
                     {coffeeStoreData.length > 0 && (
                         <div>
                             <div className='text-[2.5rem] font-bold'>

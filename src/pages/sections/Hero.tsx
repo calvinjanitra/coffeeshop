@@ -8,10 +8,12 @@ import { dataHero } from '@/components/data';
 const Hero = () => {
     const { title, subtitle, bg1, bg2, ass1, price } = dataHero;
     return (
-        <main className='w-full h-fit'>
-            <section className='w-[85%] mx-auto mt-14 flex flex-row justify-between relative border-2 border-solid'>
+        <main className='w-full h-fit mb-20'>
+            <section className='w-[85%] mx-auto mt-14 flex flex-row justify-between relative'>
                 <div className='flex flex-col gap-y-8'>
-                    <h2 className='text-[4rem] font-extrabold w-2/5'>{title}</h2>
+                    <h2 className='text-[4rem] font-extrabold w-2/5'>
+                        Midnight <span className='text-pink-600'>Frappucino</span>
+                    </h2>
                     <h3 className='text-xl text-[#6A6866] w-2/6'>{subtitle}</h3>
                     <h2 className='text-[2rem] font-bold'>{price}</h2>
                     <Button />

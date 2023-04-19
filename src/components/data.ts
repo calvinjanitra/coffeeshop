@@ -50,3 +50,24 @@ export const dataHero = {
         },
     ],
 };
+
+export const dataStore = [
+    {
+        img1: '/pink.png',
+        img2: '/kopi1.png',
+        title: 'Caramel Ribbon',
+        subtitle: 'Add to order +',
+    },
+    {
+        img1: '/green.png',
+        img2: '/kopi2.png',
+        title: 'Green Tea Latte',
+        subtitle: 'Add to order +',
+    },
+    {
+        img1: '/yellow.png',
+        img2: '/kopi3.png',
+        title: 'Ice Chocolate',
+        subtitle: 'Add to order +',
+    },
+];
